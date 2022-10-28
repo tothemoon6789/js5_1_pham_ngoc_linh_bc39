@@ -23,6 +23,8 @@
                     <ul>
                         <li>Bài 1</li>
                         <li>Bài 2</li>
+                        <li>Bài 3</li>
+                        <li>Bài 4</li>
                     </ul>
                 </div>
             </div>
@@ -67,20 +69,77 @@
                                 <input class="form-control" type="number" id="inputScoreStandardized"
                                     name="inputScoreStandardized">
                             </form>
-                            <button id="btnScore">KẾT QUẢ</button>
+                            <button class="btn btn-info" id="btnScore">KẾT QUẢ</button>
                         </section>
                         <section class="section2">
                             <div class="form-group">
-                              <label for="electricity_input_name">Tên khách hàng:</label>
-                              <input type="text" name="electricity_input_name" id="electricity_input_name" class="form-control" placeholder="Nhập tên" aria-describedby="helpId">
-                              <small id="helpId" class="text-muted">Ví dụ: Nguyễn Văn A</small>
+                                <label for="electricity_input_name">Tên khách hàng:</label>
+                                <input type="text" name="electricity_input_name" id="electricity_input_name"
+                                    class="form-control" placeholder="Nhập tên" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Ví dụ: Nguyễn Văn A</small>
                             </div>
                             <div class="form-group">
-                              <label for="electricity_input_bill">Số KW tiêu thụ:</label>
-                              <input type="number" name="electricity_input_bill" id="electricity_input_bill" class="form-control" placeholder="Nhập số KW" aria-describedby="helpId">
-                              <small id="helpId" class="text-muted">Ví dụ: 450</small>
+                                <label for="electricity_input_bill">Số KW tiêu thụ:</label>
+                                <input type="number" name="electricity_input_bill" id="electricity_input_bill"
+                                    class="form-control" placeholder="Nhập số KW" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Ví dụ: 450</small>
                             </div>
-                            <button type="button" class="btn btn-primary" id="electricity_btn">KẾT QUẢ</button>
+                            <button type="button" class="btn btn-info" id="electricity_btn">TÍNH TIỀN ĐIỆN</button>
+                        </section>
+                        <section class="section3">
+                            <div class="form-group">
+                                <label for="tax_name_input">Your full name</label>
+                                <input type="text" name="tax_name_input" id="tax_name_input" class="form-control"
+                                    placeholder="Enter your name" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Ex: NGUYEN VAN A</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="tax_total_income_input">Income</label>
+                                <input type="number" name="tax_total_income_input" id="tax_total_income_input"
+                                    class="form-control" placeholder="Enter your total income"
+                                    aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">EX: Your income is 150 milion vnd per year, Enter
+                                    150000000</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="taxt_person_dependent_input">Person dependent</label>
+                                <input type="number" name="taxt_person_dependent_input" id="taxt_person_dependent_input"
+                                    class="form-control" placeholder="Enter number dependent person"
+                                    aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Ex: 4 peoples, Enter 4</small>
+                            </div>
+                            <button id="tax_result_btn" class="btn btn-info">TÍNH THUẾ</button>
+                        </section>
+                        <section class="section4">
+                            <div class="form-group">
+                                <label for="pre_cha_ren_input">Số kênh</label>
+                                <input type="number" name="pre_cha_ren_input" id="pre_cha_ren_input"
+                                    class="form-control" placeholder="Nhập vào số kênh" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">VD: 1, 2 , 3</small>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="select_in_bu">Khách hàng</label>
+                              <select class="form-control" name="select_in_bu" id="select_in_bu">
+                                <option value="individual">Nhà dân</option>
+                                <option value="business">Doanh nghiệp</option>
+                              </select>
+                            </div>
+                            
+
+                            <div class="form-group" id="bu_ext_con_fee_input_wrap">
+                                <label for="bu_ext_con_fee_input">Đầu nối thêm</label>
+                                <input type="number" name="bu_ext_con_fee_input" id="bu_ext_con_fee_input"
+                                    class="form-control" placeholder="Nhập số đầu nối" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Help text</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="cus_code">Mã khách hàng</label>
+                                <input type="text" name="cus_code" id="cus_code" class="form-control"
+                                    placeholder="Nhập mã khách hàng" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">VD: PHAMNGOCLINH</small>
+                            </div>
+                            <button id="button_resul_invoice" type="button" class="btn btn-info">TÍNH HÓA ĐƠN</button>
                         </section>
                     </div>
                 </div>
